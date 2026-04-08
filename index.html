@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2.1 સંસ્કૃત પદ્ધતિ - ડો. જીગ્નેશ ગોહિલ</title>
+    <style>
+        :root {
+            --primary: #1a237e; /* Royal Blue */
+            --secondary: #e65100; /* Deep Orange */
+            --bg: #fdfdfd;
+            --card-bg: #ffffff;
+            --text: #000000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #3949ab);
+            color: white;
+            padding: 30px 15px;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .hidden { display: none; }
+
+        h2 { color: var(--primary); border-left: 8px solid var(--secondary); padding-left: 15px; font-size: 1.8rem; }
+        h3 { color: var(--secondary); margin-top: 25px; border-bottom: 1px solid #ddd; }
+
+        .audio-btn {
+            background: #fff3e0;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .audio-btn:hover { background: var(--secondary); color: white; }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .point-box {
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #c5e1a5;
+        }
+
+        .point-box h4 { margin-top: 0; color: #2e7d32; }
+        .point-box ul { padding-left: 20px; }
+        .point-box li { margin-bottom: 8px; font-size: 1.05rem; font-weight: 500; }
+
+        .btn-next {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 0;
+            font-weight: bold;
+        }
+
+        /* Quiz Styles */
+        .quiz-option {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            margin: 12px 0;
+            background: white;
+            color: black;
+            border: 3px solid var(--primary);
+            border-radius: 10px;
+            font-size: 1.2rem;
+            text-align: left;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .quiz-option:hover { background: #e8eaf6; }
+        .correct { background: #4caf50 !important; color: white !important; border-color: #2e7d32 !important; }
+        .wrong { background: #f44336 !important; color: white !important; border-color: #b71c1c !important; }
+        
+        #score-board { font-size: 1.5rem; text-align: center; color: var(--primary); font-weight: bold; margin-bottom: 15px; }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Unit 2.1 સંસ્કૃત પદ્ધતિ</h1>
+    <p>ડો. જીગ્નેશ ગોહિલ, આસિસ્ટન્ટ પ્રોફેસર | શ્રીમતી એમ. એમ. શાહ કોલેજ ઓફ એજ્યુકેશન</p>
+</header>
+
+<div class="container">
+    
+    <div id="v-intro">
+        <h2>શૈક્ષણિક મોડ્યુલમાં સ્વાગત છે</h2>
+        <p style="font-size: 1.2rem;">આ મોડ્યુલમાં આપણે સંસ્કૃત શિક્ષણની ત્રણ મુખ્ય પ્રવૃત્તિઓ - <b>અનુલેખન, શ્રુતલેખન અને ગાન</b> વિશે સંપૂર્ણ માહિતી મેળવીશું અને ત્યારબાદ તમારી સમજ ચકાસવા માટે કસોટી આપીશું.</p>
+        <button class="btn-next" onclick="showView('v-learn-1')">શરૂ કરો</button>
+    </div>
+
+    <div id="v-learn-1" class="hidden">
+        <h2>૧. સંસ્કૃત અનુલેખન</h2>
+        <button class="audio-btn" onclick="speak('txt-1')">📢 ઓડિયો સાંભળો (ગુજરાતી)</button>
+        
+        <div id="txt-1">
+            <h3>સંકલ્પના:</h3>
+            <p style="font-size: 1.1rem;">અનુલેખન એટલે કોઈ આદર્શ હસ્તાક્ષર, પુસ્તકનો ફકરો કે શિક્ષકે બોર્ડ પર લખેલા લખાણને જોઈને તેની આબેહૂબ નકલ કરવી. સંસ્કૃત ભાષામાં અક્ષરોના વળાંક અને શિરોરેખાની ચોકસાઈ શીખવા માટે આ પાયાની પ્રવૃત્તિ છે.</p>
+            
+            <div class="content-grid">
+                <div class="point-box">
+                    <h4>મહત્વ (Importance)</h4>
+                    <ul>
+                        <li>૧. લિપિ પરિચય અને મરોળ.</li>
+                        <li>૨. શિરોરેખાનું સાચું મહત્વ.</li>
+                        <li>૩. માનસિક એકાગ્રતા વધે.</li>
+                        <li>૪. વિરામચિહ્નોની સાચી સમજ.</li>
+                        <li>૫. જોડાક્ષરોની જોડણી શુદ્ધિ.</li>
+                        <li>૬. ખંત અને ધીરજ કેળવાય.</li>
+                        <li>૭. શબ્દભંડોળમાં વૃદ્ધિ.</li>
+                        <li>૮. લેખન કૌશલ્યનો પાયો.</li>
+                    </ul>
+                </div>
+                <div class="point-box">
+                    <h4>ફાયદા (Advantages)</h4>
+                    <ul>
+                        <li>૧. સુંદર અને સ્પષ્ટ હસ્તાક્ષર.</li>
+                        <li>૨. લખાણમાં સુઘડતા અને સ્વચ્છતા.</li>
+                        <li>૩. લખવાની ગતિમાં સુધારો.</li>
+                        <li>૪. ભૂલ રહિત લેખનનો મહાવરો.</li>
+                        <li>૫. સ્વ-મૂલ્યાંકન અને સુધારણા.</li>
+                        <li>૬. વિષયમાં આત્મવિશ્વાસ વધે.</li>
+                        <li>૭. ભાષા પ્રત્યે રુચિ જાગે.</li>
+                        <li>૮. સ્મૃતિમાં લાંબો સમય ટકે.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="btn-next" onclick="stopSpeech(); startQuiz(1)">અનુલેખન કસોટી</button>
+    </div>
+
+    <div id="v-learn-2" class="hidden">
+        <h2>૨. સંસ્કૃત શ્રુતલેખન</h2>
+        <button class="audio-btn" onclick="speak('txt-2')">📢 ઓડિયો સાંભળો (ગુજરાતી)</button>
+
+        <div id="txt-2">
+            <h3>સંકલ્પના:</h3>
+            <p style="font-size: 1.1rem;">શ્રુતલેખન એટલે 'સાંભળીને લખવું'. શિક્ષક સંસ્કૃત શબ્દો કે શ્લોકોનું શુદ્ધ ઉચ્ચારણ કરે અને વિદ્યાર્થી તેને ધ્યાનથી સાંભળીને લખે. આમાં શ્રવણ અને લેખન કૌશલ્યનો સમન્વય થાય છે.</p>
+            
+            <div class="content-grid">
+                <div class="point-box">
+                    <h4>મહત્વ (Importance)</h4>
+                    <ul>
+                        <li>૧. શ્રવણ શક્તિનો વિકાસ.</li>
+                        <li>૨. ધ્વનિ અને ઉચ્ચાર પરિચય.</li>
+                        <li>૩. અનુસ્વાર-વિસર્ગનું ચોક્કસ જ્ઞાન.</li>
+                        <li>૪. તાર્કિક ક્ષમતામાં વધારો.</li>
+                        <li>૫. ભાષાકીય શિસ્ત કેળવાય.</li>
+                        <li>૬. ઉચ્ચારણમાં ચોકસાઈ આવે.</li>
+                        <li>૭. વિભક્તિ પ્રત્યયોની સમજ.</li>
+                        <li>૮. નિદાન અને ઉપચારની તક.</li>
+                    </ul>
+                </div>
+                <div class="point-box">
+                    <h4>ફાયદા (Advantages)</h4>
+                    <ul>
+                        <li>૧. એકાગ્રતાની ટોચ વધે.</li>
+                        <li>૨. જોડણી દોષોનું નિવારણ.</li>
+                        <li>૩. ઉચ્ચારણ શુદ્ધિમાં મદદ.</li>
+                        <li>૪. ઝડપી લેખનનો મહાવરો.</li>
+                        <li>૫. નવા શબ્દોનું જીવંત જ્ઞાન.</li>
+                        <li>૬. પરીક્ષામાં ભૂલોનું ઓછું પ્રમાણ.</li>
+                        <li>૭. શ્રુતિ સ્મૃતિનો વિકાસ.</li>
+                        <li>૮. વિદ્યાર્થીમાં આત્મનિર્ભરતા.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="btn-next" onclick="stopSpeech(); startQuiz(2)">શ્રુતલેખન કસોટી</button>
+    </div>
+
+    <div id="v-learn-3" class="hidden">
+        <h2>૩. સંસ્કૃત ગાન</h2>
+        <button class="audio-btn" onclick="speak('txt-3')">📢 ઓડિયો સાંભળો (ગુજરાતી)</button>
+
+        <div id="txt-3">
+            <h3>સંકલ્પના:</h3>
+            <p style="font-size: 1.1rem;">સંસ્કૃત એ છંદોબદ્ધ ભાષા છે. ગાન એટલે શ્લોકો કે સ્તોત્રોને તેના નિર્ધારિત રાગ, લય અને છંદ મુજબ ગાવા. તે ભાષાના હાર્દને સમજવાની કળા છે.</p>
+            
+            <div class="content-grid">
+                <div class="point-box">
+                    <h4>મહત્વ (Importance)</h4>
+                    <ul>
+                        <li>૧. ભાષાની મધુરતાનો અનુભવ.</li>
+                        <li>૨. સહજ કંઠસ્થિકરણ (યાદ રાખવું).</li>
+                        <li>૩. છંદોના આરોહ-અવરોહની સમજ.</li>
+                        <li>૪. જીવંત શૈક્ષણિક વાતાવરણ.</li>
+                        <li>૫. શ્વસન અને ફેફસાની કસરત.</li>
+                        <li>૬. રસો અને ભાવોનું ગ્રહણ.</li>
+                        <li>૭. સાંસ્કૃતિક વારસાનું જતન.</li>
+                        <li>૮. જીભના ઉચ્ચારણની સ્પષ્ટતા.</li>
+                    </ul>
+                </div>
+                <div class="point-box">
+                    <h4>ફાયદા (Advantages)</h4>
+                    <ul>
+                        <li>૧. યાદશક્તિમાં અનેરો વધારો.</li>
+                        <li>૨. માનસિક શાંતિ અને ઉર્જા.</li>
+                        <li>૩. જીભની જડતા દૂર થાય.</li>
+                        <li>૪. વિષય પ્રત્યે રુચિ વધે.</li>
+                        <li>૫. સમૂહગાનથી એકતા કેળવાય.</li>
+                        <li>૬. સ્ટેજ ફીયર (ડર) દૂર થાય.</li>
+                        <li>૭. સંધિ અને વિચ્છેદ સમજાય.</li>
+                        <li>૮. વાણી અને સ્વાસ્થ્યમાં સુધારો.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="btn-next" onclick="stopSpeech(); startQuiz(3)">ગાન કસોટી</button>
+    </div>
+
+    <div id="v-quiz" class="hidden">
+        <div id="score-board">સ્કોર: 0</div>
+        <h3 id="quiz-q-text">પ્રશ્ન લોડ થાય છે...</h3>
+        <div id="quiz-options"></div>
+        <button id="btn-next-q" class="btn-next hidden" onclick="handleNextQ()">આગળ વધો</button>
+    </div>
+
+    <div id="v-final" class="hidden" style="text-align: center;">
+        <h2>અભિનંદન!</h2>
+        <p style="font-size: 1.5rem;">તમે Unit 2.1 ની તમામ સમજ અને કસોટીઓ પૂર્ણ કરી છે.</p>
+        <div id="final-result" style="font-size: 2.5rem; color: var(--primary); margin: 20px 0;"></div>
+        <button class="btn-next" onclick="location.reload()">ફરીથી શીખો</button>
+    </div>
+
+</div>
+
+<script>
+    let currentScore = 0;
+    let currentTopic = 0;
+    let currentQIdx = 0;
+
+    const quizContent = {
+        1: [
+            {q: "અનુલેખન એટલે શું?", o: ["સાંભળીને લખવું", "જોઈને નકલ કરવી", "વિચારીને લખવું", "વાંચવું"], c: 1},
+            {q: "સુંદર હસ્તાક્ષર માટે કઈ પ્રવૃત્તિ પાયાની છે?", o: ["ગાન", "અનુલેખન", "વાતચીત", "રમત"], c: 1},
+            {q: "અનુલેખનથી શેમાં સુધારો થાય છે?", o: ["દોડવાની ગતિ", "જોડણી અને મરોળ", "ખાવું", "ઊંઘ"], c: 1},
+            {q: "સંસ્કૃતમાં શિરોરેખાની સમજ શેનાથી મળે છે?", o: ["રમત", "અનુલેખન", "ટીવી", "ચિત્ર"], c: 1},
+            {q: "અનુલેખનથી કયો ગુણ કેળવાય છે?", o: ["ઝગડો", "ધીરજ અને ખંત", "આળસ", "કંકાસ"], c: 1},
+            {q: "શું અનુલેખનથી ઝડપ વધે છે?", o: ["ના", "હા", "કદાચ", "ખબર નથી"], c: 1},
+            {q: "આદર્શ લખાણની આબેહૂબ પ્રતિકૃતિ એટલે?", o: ["ગાન", "શ્રુતલેખન", "અનુલેખન", "વાચન"], c: 2}
+        ],
+        2: [
+            {q: "સાંભળીને લખવું એટલે શું?", o: ["અનુલેખન", "શ્રુતલેખન", "ગાન", "રમત"], c: 1},
+            {q: "શ્રુતલેખનથી કઈ શક્તિ વધે છે?", o: ["શ્રવણ શક્તિ", "દોડવાની", "જોવાની", "ખાવાની"], c: 0},
+            {q: "સંસ્કૃતમાં 'ઃ' (વિસર્ગ) ની સમજ શેનાથી મળે?", o: ["અનુલેખન", "શ્રુતલેખન", "રમત", "ચિત્ર"], c: 1},
+            {q: "શ્રુતલેખનમાં કોનું ઉચ્ચારણ મહત્વનું છે?", o: ["મિત્રનું", "રેડિયોનું", "શિક્ષકનું", "પક્ષીનું"], c: 2},
+            {q: "કઈ સ્મૃતિનો વિકાસ થાય છે?", o: ["શ્રુતિ સ્મૃતિ", "સ્વાદ સ્મૃતિ", "ગંધ સ્મૃતિ", "સ્પર્શ સ્મૃતિ"], c: 0},
+            {q: "ઉચ્ચારણ શુદ્ધિ માટે શું જરૂરી છે?", o: ["શ્રુતલેખન", "સૂઈ જવું", "રમત", "ટીવી"], c: 0},
+            {q: "શ્રુતલેખનથી લેખનની ઝડપ...", o: ["ઘટે", "વધે", "સરખી રહે", "બંધ થાય"], c: 1}
+        ],
+        3: [
+            {q: "શ્લોકોને લયબદ્ધ ગાવા એટલે?", o: ["ગાન", "વાતચીત", "દોડવું", "રમત"], c: 0},
+            {q: "ગાનથી શું સ્પષ્ટ બને છે?", o: ["ઉચ્ચારણ", "રસ્તો", "દીવાલ", "ઘર"], c: 0},
+            {q: "કઈ ભાષા છંદોમય છે?", o: ["અંગ્રેજી", "સંસ્કૃત", "ગણિત", "વિજ્ઞાન"], c: 1},
+            {q: "ગાનથી કયા તંત્રની કસરત થાય?", o: ["પાચન", "શ્વસનતંત્ર", "ચેતાતંત્ર", "કાન"], c: 1},
+            {q: "શ્લોકો યાદ રાખવા માટે શ્રેષ્ઠ શું છે?", o: ["ગોખવું", "ગાન", "સૂવું", "ટીવી"], c: 1},
+            {q: "સ્ટેજ ફીયર દૂર કરવા શું કરવું?", o: ["ગાન", "ચૂપ રહેવું", "સૂવું", "ખાવા"], c: 0},
+            {q: "સંસ્કૃત ગાનથી મનને શું મળે છે?", o: ["તણાવ", "શાંતિ અને ઉર્જા", "કંટાળો", "ઊંઘ"], c: 1}
+        ]
+    };
+
+    function showView(id) {
+        document.querySelectorAll('.container > div').forEach(d => d.classList.add('hidden'));
+        document.getElementById(id).classList.remove('hidden');
+        window.scrollTo(0,0);
+    }
+
+    function speak(id) {
+        window.speechSynthesis.cancel();
+        const text = document.getElementById(id).innerText;
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = 'gu-IN';
+        msg.rate = 0.9;
+        window.speechSynthesis.speak(msg);
+    }
+
+    function stopSpeech() { window.speechSynthesis.cancel(); }
+
+    function startQuiz(t) {
+        currentTopic = t;
+        currentQIdx = 0;
+        showView('v-quiz');
+        loadQ();
+    }
+
+    function loadQ() {
+        const qData = quizContent[currentTopic][currentQIdx];
+        document.getElementById('quiz-q-text').innerText = `પ્રશ્ન ${currentQIdx + 1}: ${qData.q}`;
+        const optDiv = document.getElementById('quiz-options');
+        optDiv.innerHTML = '';
+        document.getElementById('btn-next-q').classList.add('hidden');
+
+        qData.o.forEach((txt, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-option';
+            btn.innerText = txt;
+            btn.onclick = () => {
+                const all = document.querySelectorAll('.quiz-option');
+                all.forEach(b => b.disabled = true);
+                if(i === qData.c) { btn.classList.add('correct'); currentScore += 10; }
+                else { btn.classList.add('wrong'); all[qData.c].classList.add('correct'); }
+                document.getElementById('score-board').innerText = "સ્કોર: " + currentScore;
+                document.getElementById('btn-next-q').classList.remove('hidden');
+            };
+            optDiv.appendChild(btn);
+        });
+    }
+
+    function handleNextQ() {
+        currentQIdx++;
+        if(currentQIdx < 7) loadQ();
+        else {
+            if(currentTopic < 3) showView('v-learn-' + (currentTopic + 1));
+            else { showView('v-final'); document.getElementById('final-result').innerText = "કુલ સ્કોર: " + currentScore + " / 210"; }
+        }
+    }
+</script>
+
+</body>
+</html>
